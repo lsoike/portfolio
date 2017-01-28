@@ -21,7 +21,6 @@ function setup() {
 	triangle(300, 600, 375, 525, 375, 600);// triangle shape to show the contrast of shadow on neck - right side
   
 	// Head
- 	fill(249, 189, 215); // sets fill color to skin color
  	ellipse(270, 300, 325, 490); // shape of the head
 	fill(0); // sets fill color to black
 	ellipse(400, 415, 70, 100); // creates the shape to show shadowed cheekbone
@@ -103,10 +102,4 @@ function setup() {
 	noStroke(); // removes the stroke for the shape that makes her coat
 	fill(1, 148, 140); // sets fill color to dark turquoise
 	ellipse(400, 600, 80, 225); // shape that creates her coat
-	
-	
-}
-
-function draw() {
-  
 }
