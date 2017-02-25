@@ -18,13 +18,15 @@ p {
 	font-family: 'Roboto Slab', serif;
 }
 
+li {
+	color: #444444;
+	margin-left: 20px;
+	list-style: none;
+	line-height: 5px;
+}
 a {
 	color: #27cce4;
 	font-family: 'Roboto Slab', serif;
 }
 
-li {
-	margin-left: 20px;
-	list-style: none;
-	line-height: 5px;
-}
+
