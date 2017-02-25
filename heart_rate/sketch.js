@@ -1,31 +1,31 @@
 // Created by Layne Soike
-// Last edited 02/24/2017
+// Last edited 02/25/2017
 // This program displays a visualization of Layne's 
-// heart rate each minute of a 30 minute workout
-
-// heart rate (bpm) by minute
-// data from 02/13/2017 07:14-07:44AM; source Layne's Apple Watch
+// heart rate each minute of a 30-minute workout
+// Data from 02/13/2017 07:14-07:44 AM; source Layne's Apple Watch
 
 var rate = [68, 104, 135, 133, 126, 131, 149, 157, 157, 166, 162, 159, 117, 157, 150,101, 122, 156, 153, 157, 153, 157, 150, 124, 96, 104, 113, 103, 110, 110];
 
 // preloads the image of the Apple Watch
 function preload() {
-  watch = loadImage("apple_watch.png");
+  watch = loadImage("apple_watch.png"); 
 }
 
 function setup() {
   createCanvas(1260, 700); // sets canvas size to 1200 x 700
   textFont("Francois One"); // sets the font to the Google, Font Francois One
+  time = millis(); // sets the beating heart on Apple Watch to be timed by milliseconds
 }
 
 function draw() {
   background(255); // clears the background
-  image(watch, 120, 100);
+  image(watch, 120, 100); // places the image of the Apple Watch near the title
+
   drawHearts(); // draws the data points as hearts
   drawAxis(); // draws the graph axis, hashmarks and numbers
   drawLabels(); // draws the graph labels and title
   displayValues(); // calls display values, which shows values on hover
-
+  beatingHeart(); // draws the beating heart in the Apple Watch
 }
 
 // draws the data points as hearts on a graph where the x-axis shows the minute of the workout
@@ -90,4 +90,18 @@ function displayValues() {
       text("Min of workout: " + (i + 1), mouseX + 10, mouseY + 55); // draws the second line of text for the hover box
     }
   }
+}
+
+// draws the beating heart inside of the Apple Watch
+function beatingHeart() {
+  fill(255, 0, 0); // sets fill color to red
+  noStroke(); // removes the stroke
+  passedMillis = millis() - time; // calculates passed milliseconds
+  if(passedMillis >= 800){
+      time = millis();
+      fill(0);  // if more than 800 milliseconds passed set fill color to black
+  }
+  ellipse(183, 168, 20, 20); // draws the first hump of the heart
+  ellipse(199, 168, 20, 20);// draws the second hump of the heart
+  quad(175, 174, 191, 164, 207, 174, 191, 188); // draws the point of the heart
 }
