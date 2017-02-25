@@ -1,0 +1,25 @@
+h1 {
+	color: #444444;
+	margin-left: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	ont-size: 36pt; 
+} 
+
+h3 {
+	color: #27cce4;
+	margin-left: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24pt; 
+} 
+		
+p {
+	color: #444444;
+	margin-left: 40px;
+	font-family: 'Roboto Slab', serif;
+}
+
+a {
+	margin-left: 40px;
+	color: #444444;
+	font-family: 'Roboto Slab', serif;
+}
