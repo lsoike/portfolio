@@ -19,13 +19,12 @@ p {
 }
 
 li {
-	color: #444444;
 	margin-left: 20px;
 	list-style: none;
-	line-height: 15px;
+	line-height: 25px;
 }
 a {
-	color: #27cce4;
+	color: #444444;
 	font-family: 'Roboto Slab', serif;
 }
 
