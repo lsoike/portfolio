@@ -19,7 +19,11 @@ p {
 }
 
 a {
-	margin-left: 40px;
 	color: #444444;
 	font-family: 'Roboto Slab', serif;
+}
+
+li {
+	margin-left: 40px;
+	list-style: none;
 }
