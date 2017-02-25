@@ -5,10 +5,8 @@ function setup() {
 }
 
 function draw() {
-	
-	background(205); // since the program is running on a continuos loop, each time you move the mouse it is drawing a new robot. Without having a background set, you see each previous robot that has been drawn before. Best guess, am I right?!
-	translate(mouseX, mouseY);
-
+ background(205); // since the program is running on a continuos loop, each time you move the mouse it is drawing a new robot. Without having a background set, you see each previous robot that has been drawn before. Best guess, am I right?!
+ translate(mouseX-276, mouseY-155);
  // Neck
  stroke (230, 183, 42); // sets the color of the neck lines
  line(266, 257, 266, 162); // length and positioning of first neck line
