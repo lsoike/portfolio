@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Layne Soike Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+</head>	
+
+<body>
+  
+<div style="width:750px;">
+<h1>LAYNE SOIKE</h1>
+
+<p>I'm a graphic designer for Boeing by day, and a masters student at the University of Washington by night. My passion for design is what has driven me to learn more about user-experience and usability while
+	gaining a better understanding in areas of programming and research.</p>
+<p>This portfolio showcases the work I have done for my creative computing course, an introduction to coding in UW's HCDE masters program.
+	</p>
+	
+	
+	
+<h1>PROJECTS</h1>
+<h3>EXERCISES</h3>
+	<ul>
+		<li><a href="robot">Robot Exercise</a></li>
+	</ul>
+<br>
+   
+<h3>ASSIGNMENTS</h3>
+	<ul>
+		<li><a href="marilyn">Digitize Assignment</a></li>
+		<li><a href="jetsons">Lego Family Assignment</a></li>
+		<li><a href="interactive_monster">Interactive Monster Assignment</a></li>
+		<li><a href="typewriter">Creativity Exploration Assignment – Typewriter</a></li>
+		<li><a href="sun">Creativity Exploration Assignment – Sunset/Sunrise</a></li>
+		<li><a href="heart_rate">Data Visualization</a></li>
+		<li><a href="color">Final Assignment – Color Me</a></li>
+	</ul>
+   
+
+</div>
+
+</body>
+</html>
